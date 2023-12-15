@@ -10,13 +10,13 @@ import CreateListing from './pages/CreateListing'
 import UpdateListing from './pages/UpdateListing'
 import Listing from './pages/Listing'
 import Search from './pages/Search'
-import TabHeader from './components/TabHeader'
+// import TabHeader from './components/TabHeader'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <TabHeader></TabHeader>
+      {/* <TabHeader></TabHeader> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />

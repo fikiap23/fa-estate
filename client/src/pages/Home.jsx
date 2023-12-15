@@ -6,6 +6,8 @@ import { Navigation } from 'swiper/modules'
 import SwiperCore from 'swiper'
 import 'swiper/css/bundle'
 import ListingItem from '../components/ListingItem'
+import Carosel from '../components/Carosel'
+import { Box } from '@chakra-ui/react'
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([])
@@ -36,13 +38,13 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto">
+      {/* <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto">
         <h1 className="font-bold text-3xl lg:text-5xl text-white">
           Discover Your Dream Home with{' '}
-          <span className="text-black">FA-Estate</span>
+          <span className="text-black">Zing-Zone</span>
         </h1>
         <div className="text-black text-sm lg:text-xl ">
-          Elevate your living experience to new heights with FA-Estate. Immerse
+          Elevate your living experience to new heights with Zing-Zone. Immerse
           yourself in the art of finding the perfect abode as we present to you
           a meticulously curated selection of diverse properties. Each residence
           is thoughtfully chosen to cater to your unique preferences, ensuring
@@ -56,7 +58,10 @@ export default function Home() {
         >
           Search Now
         </Link>
-      </div>
+      </div> */}
+      <Box w="100%">
+        <Carosel></Carosel>
+      </Box>
 
       {/* Featured Listings Slider */}
       <Swiper navigation>
@@ -72,7 +77,6 @@ export default function Home() {
           </SwiperSlide>
         ))}
       </Swiper>
-
       {/* Listing Results for Offer, Sale, and Rent */}
       <div className="max-w-6xl mx-auto p-3 flex flex-col gap-8 my-10">
         {offerListings.length > 0 && (

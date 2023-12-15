@@ -27,8 +27,8 @@ export default function Header() {
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
         <Link to="/">
           <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
-            <span className="text-[#7071E8]">FA-</span>
-            <span className="text-slate-700">Estate</span>
+            <span className="text-[#7071E8]">Zing-</span>
+            <span className="text-slate-700">Zone</span>
           </h1>
         </Link>
         <form
