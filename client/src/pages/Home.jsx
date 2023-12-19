@@ -27,9 +27,9 @@ export default function Home() {
     }
 
     const fetchAllListings = async () => {
-      fetchData('?offer=true&limit=4', setOfferListings)
-      fetchData('?type=rent&limit=4', setRentListings)
-      fetchData('?type=sale&limit=4', setSaleListings)
+      fetchData('?offer=true&limit=6', setOfferListings)
+      fetchData('?type=rent&limit=6', setRentListings)
+      fetchData('?type=sale&limit=6', setSaleListings)
     }
 
     fetchAllListings()
